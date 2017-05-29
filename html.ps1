@@ -3,8 +3,7 @@
 # Author: Szymon Kędzierski
 
 #------------------------------------------------------------------------------------------------------------------------
-# Generating webpage file ggg
-
+# Generating webpage
 
 $html_index= @"
 <!DOCTYPE html>
