@@ -3,7 +3,7 @@
 # Author: Szymon Kędzierski
 
 #------------------------------------------------------------------------------------------------------------------------
-# Generating webpage
+# Generating webpage file
 
 $html_index= @"
 <!DOCTYPE html>
