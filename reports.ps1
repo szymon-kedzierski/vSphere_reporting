@@ -1,14 +1,43 @@
 ﻿# VMware vSphere reporting
 # Author: Szymon Kędzierski
 
+<#
+    .SYNOPSIS
+        VMware vSphere reporting script
 
+    .DESCRIPTION
+        Script saves current state of the VMware vSphere virtual environment - basic vCenter Server objects including ESXi hosts, clusters, datastores and virtual machines. 
+        Program also collects information about potential configuration errors affecting the efficiency of the environment, such as orphaned virtual machines or machines kept on the local ESXi storage.
+
+    .PARAMETER vCenter_Server
+        IP or FQDN vCenter server
+
+    .PARAMETER Folder
+        Folder where to save output files
+
+    .OUTPUTS
+       clusters.csv
+       datastores.csv
+       hosts.csv
+       resourcepools.csv
+       vds.csv
+       vms.csv
+       index.html
+
+    .EXAMPLE
+        ..\reports.ps1 192.168.1.1 C:\Temp
+
+    .LINK
+        https://github.com/szymon-kedzierski/vSphere_reporting/blob/master/README.md
+
+#>
 
 
 [CmdletBinding()] 
 Param (
 
 #IP or FQDN vCenter server
-#[Parameter (Mandatory=$True)] [string] $vCenter_Server, 
+[Parameter (Mandatory=$True)] [string] $vCenter_Server, 
 
 # Folder where to save output
 [Parameter (Mandatory=$True)] [string] $Folder 
@@ -19,9 +48,9 @@ Param (
  try 
  {
    if (!(Test-Path $Folder)) {throw "Folder does not exist. Exiting..."} #If folder exists
-   #Write-Host "Connecting to vCenter, please wait..."
-   #Connect-ViServer -server $vCenter_Server 
-   #if (!$?) {throw "Could not connect to vCenter. Exiting..."}
+   Write-Host "Connecting to vCenter, please wait..."
+   Connect-ViServer -server $vCenter_Server 
+   if (!$?) {throw "Could not connect to vCenter. Exiting..."}
   }
 catch [Exception]{
     Write-Host  $_.Exception.Message
