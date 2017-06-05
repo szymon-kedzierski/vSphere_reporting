@@ -8,7 +8,7 @@ Program also collects information about potential configuration errors affecting
 <b>Requirements</b>
 * Microsoft PowerShell 5.0 or higher command interpreter installed
 * VMware PowerCLI 6.0 or later installed to run the script 
-* to be able to connect to the vCenter Server from which the report is to be created (port 443)
+* to be able to connect to the vCenter Server from which the report should be created (port 443)
 
 The script consists of two files: reports.ps1 and html.ps1. Both files must be placed in the same folder.
 Tests were performed on VMware vSphere 6.0.
