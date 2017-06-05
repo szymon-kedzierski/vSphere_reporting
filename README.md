@@ -1,7 +1,7 @@
 # vSphere_reporting
 VMware vSphere virtual environment status reporting
 
-Requirements
+<b>Requirements</b>
 * Microsoft PowerShell 5.0 or higher command interpreter installed
 * VMware PowerCLI 6.0 or later installed to run the script 
 * to be able to connect to the vCenter Server from which the report is to be created (port 443)
