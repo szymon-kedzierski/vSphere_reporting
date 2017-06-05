@@ -2,9 +2,10 @@
 VMware vSphere virtual environment status reporting
 
 Requirements
-Microsoft PowerShell 5.0 or higher command interpreter installed
-VMware PowerCLI 6.0 or later installed to run the script 
-to be able to connect to the vCenter Server from which the report is to be created (port 443)
+* Microsoft PowerShell 5.0 or higher command interpreter installed
+* VMware PowerCLI 6.0 or later installed to run the script 
+* to be able to connect to the vCenter Server from which the report is to be created (port 443)
+
 The tests were performed on VMware vSphere 6.0, but older versions of the environment will also work with the program.
 The script consists of two files: reports.ps1 and html.ps1. Both files must be placed in the same folder.
 
