@@ -1,7 +1,7 @@
 # vSphere_reporting
 VMware vSphere virtual environment status reporting
 
-<b>Description</b>
+<b>Description</b> <br/>
 Script saves current state of the VMware vSphere virtual environment - basic vCenter Server objects including ESXi hosts, clusters, datastores and virtual machines. 
 Program also collects information about potential configuration errors affecting the efficiency of the environment, such as orphaned virtual machines or machines kept on the local ESXi storage.
 
