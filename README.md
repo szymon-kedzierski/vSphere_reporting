@@ -17,17 +17,17 @@ Tests were performed on VMware vSphere 6.0.
  * vCenter_Server - IP or FQDN vCenter server
  * Folder - Folder where to save output files
 
-<b>Output</b>
-When the program starts properly, the following CSV output files are generated:
-* clusters.csv - a file containing a high availability cluster configuration report
-* datastores.csv - file containing the datastore configuration report
-* hosts.csv - file containing the ESXi host configuration report
-* resourcepools.csv - file containing resourcepool settings
-* vds.csv - a file containing configuration of the virtual distributed switches
-* vms.csv - a file containing configuration of virtual machines
-* index.html - containing the same data as CSV files, put into separated tabs, also potencial issues are included into report 
+<b>Output</b><br/>
+Following CSV output files are generated:
+* clusters.csv - file containing a high availability clusters configuration report
+* datastores.csv - file containing the datastores configuration report
+* hosts.csv - file containing ESXis host configuration report
+* resourcepools.csv - file containing resourcepools settings
+* vds.csv - file containing configuration of virtual distributed switches
+* vms.csv - file containing configuration of virtual machines
+* index.html - web page containing the same data as CSV files, put into separated tabs, also potencial issues are included
 
 Values in a CSV file are separated by a semicolon.
 
-<b>Mware vSphere issues</b>
+<b>VMware vSphere issues</b>
 
