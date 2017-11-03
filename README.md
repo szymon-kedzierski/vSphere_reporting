@@ -30,4 +30,6 @@ Following CSV output files are generated:
 Values in a CSV file are separated by a semicolon.
 
 <b>VMware vSphere issues</b>
+* vCenter Server alarms
+* disconnected, inaccessible, invalid, orphaned vms
 
