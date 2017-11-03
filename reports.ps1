@@ -25,7 +25,7 @@
        index.html
 
     .EXAMPLE
-        ..\reports.ps1 192.168.1.1 C:\Temp
+        .\reports.ps1 192.168.1.1 C:\Temp
 
     .LINK
         https://github.com/szymon-kedzierski/vSphere_reporting/blob/master/README.md
