@@ -239,7 +239,7 @@ foreach ($vm in $vms)
         [array]$html_issues_vmtools += $vmtools|Select "VM Name", "VMTools Version Status", "VMTools Version" 
     }
 
-    #disconnected, Odlaczone, inaccessible, invalid, orphaned vms
+    #disconnected, inaccessible, invalid, orphaned vms
     if (($vm.RunTime.ConnectionState -eq "disconnected") -or ($vm.RunTime.ConnectionState -eq "inaccessible") -or ($vm.RunTime.ConnectionState -eq "invalid") -or ($vm.RunTime.ConnectionState -eq "orphaned"))
     {
         $vmstate = New-Object psobject -Property @{
