@@ -31,5 +31,8 @@ Values in a CSV file are separated by a semicolon.
 
 <b>VMware vSphere issues</b>
 * vCenter Server alarms
+* VMs without current tools
 * disconnected, inaccessible, invalid, orphaned vms
+* snapshots older than defined number of hours and count is larger than defined amout
+* VMs on local storage
 
